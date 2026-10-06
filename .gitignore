@@ -24,3 +24,6 @@ v10/audio/*.mp3
 v10/*.zip
 v10/out/
 v10/clips/
+test01/*.wav
+test01/*.mp3
+test01/*.zip
