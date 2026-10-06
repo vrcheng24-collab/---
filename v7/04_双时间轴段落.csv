@@ -1,0 +1,6 @@
+﻿block_id,block_type,source_file,song_in,song_out,mv_in,mv_out,duration,dialogue_file,ambience_file,transition,approval_status,notes
+B0,开场（无音乐）,,,,0.00,52.00,52.00,待录制,待准备,硬切进 P5 拨弦,proposal_pending,对白需录音
+B1,歌曲前段,1dd96bd4-_____.mp3,0.00,150.50,52.00,202.50,150.50,,,149.30–150.50 淡出,proposal_pending,150.50 处 RMS 约 −16 dB 的换气凹陷（实测）
+B2,无音乐章节,,,,202.50,250.50,48.00,,待准备,L09_01 幕布后吸气，接回母带,proposal_pending,是否保留整章待用户确认；L08 含同曲画内声（提案）
+B3,歌曲后段,1dd96bd4-_____.mp3,150.50,240.456,250.50,340.46,89.96,,,从 150.50 原位接回，不重复歌词,proposal_pending,
+B4,结尾（无音乐）,,,,340.46,368.46,28.00,待录制,待准备,黑场片名,proposal_pending,
