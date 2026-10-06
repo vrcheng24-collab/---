@@ -16,7 +16,7 @@
 
 ### 1. O1　贴领夹麦
 ```
-extreme close-up, a sound engineer's hands taping a tiny black lavalier microphone onto the mint-teal chest plate of a female humanoid robot with a glossy mint-teal and lemon-yellow painted metal shell, a segmented brushed-silver robotic face with teal lips, glowing blue ring-shaped LED eyes, silver turbine ears and a yellow fin on one side of her head with white gaffer tape, the tape peeling off the glossy metal and being pressed down again, she sits perfectly still, a single work light from the side, dark studio background, 85mm, shallow depth of field, 35mm anamorphic film still, Kodak Vision3 500T, low-key motivated lighting, deep shadows, muted color, grounded realism --ar 239:100 --v 8.1 --style raw --s 150 --no cartoon, anime, 3d render, plastic toy
+extreme close-up, a sound engineer's hands using white gaffer tape to stick a tiny black lavalier microphone onto the mint-teal chest plate of a female humanoid robot with a glossy mint-teal and lemon-yellow painted metal shell, a segmented brushed-silver robotic face with teal lips, glowing blue ring-shaped LED eyes, silver turbine ears and a yellow fin on one side of her head, the tape peeling off the glossy metal and being pressed down again, she sits perfectly still, a single work light from the side, dark studio background, 85mm, shallow depth of field, 35mm anamorphic film still, Kodak Vision3 500T, low-key motivated lighting, deep shadows, muted color, grounded realism --ar 239:100 --v 8.1 --style raw --s 150 --no cartoon, anime, 3d render, plastic toy
 ```
 
 ### 2. O2　“加点呼吸声”
@@ -31,7 +31,7 @@ close-up, a camera assistant holding a white balance card right next to the brus
 
 ### 4. O4　擦一擦外壳
 ```
-a young Chinese makeup artist standing in front of a female humanoid robot with a glossy mint-teal and lemon-yellow painted metal shell, a segmented brushed-silver robotic face with teal lips, glowing blue ring-shaped LED eyes, silver turbine ears and a yellow fin on one side of her head holding a makeup brush in mid-air, hesitating, an open makeup case beside her, then wiping the robot's metal shell with a lens cloth instead, awkward and quiet, one practical lamp, dark interview studio, 50mm, 35mm anamorphic film still, Kodak Vision3 500T, low-key motivated lighting, deep shadows, muted color, grounded realism --ar 239:100 --v 8.1 --style raw --s 150 --no cartoon, anime, 3d render, plastic toy
+a young Chinese makeup artist holding a makeup brush in mid-air and hesitating, standing in front of a female humanoid robot with a glossy mint-teal and lemon-yellow painted metal shell, a segmented brushed-silver robotic face with teal lips, glowing blue ring-shaped LED eyes, silver turbine ears and a yellow fin on one side of her head, an open makeup case beside the artist, the artist wiping the robot's metal shell with a lens cloth instead, awkward and quiet, one practical lamp, dark interview studio, 50mm, 35mm anamorphic film still, Kodak Vision3 500T, low-key motivated lighting, deep shadows, muted color, grounded realism --ar 239:100 --v 8.1 --style raw --s 150 --no cartoon, anime, 3d render, plastic toy
 ```
 
 ### 5. P1c　嘉宾牌上的“设备”　**【已出】**
