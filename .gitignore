@@ -6,3 +6,6 @@ mv/song.mp3
 mv/pluck.wav
 v7/audio/*.wav
 v7/*.zip
+v7/out/
+v7/clips/
+v7/frames/

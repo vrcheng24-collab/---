@@ -21,8 +21,8 @@ STAGE = {
  "LOW":    ("B1 本体＋B3 黑色长羽绒服和灰围巾，戴一顶廉价、不合适的黑色假发（假发不与耳侧涡轮穿插）。", "B1 body with the long black puffer coat and grey scarf, wearing a cheap ill-fitting black synthetic wig that sits around, not through, the round ear units."),
  "V2":     ("夜场 v2：黑色露肩短上装和短裙（不透的内衬）、饰链和耳饰，露出的肩、臂、腰、腿全是机械材质，戴廉价黑假发。", "Nightclub v2: black off-shoulder cropped top and short skirt with opaque lining, small chains and earrings; every exposed shoulder, arm, waist and leg is mechanical metal; cheap black wig."),
  "V2OUT":  ("室外 v2：敞开的黑色长羽绒服里是夜场舞台装，露出的部分全是机械材质，戴廉价黑假发。", "Outdoor v2: the long black puffer coat open over the nightclub stage outfit; everything exposed is mechanical metal; cheap black wig."),
- "TRANS":  ("过渡（推荐用于演播室）：B1 本体＋黑色长羽绒服＋灰围巾，不戴假发，外壳保留旧划痕。", "Transitional (recommended for the studio): B1 body, long black puffer coat and grey scarf, no wig, old scratches kept on the shell."),
- "MATURE": ("成熟（建议用于春天，待确认）：青黄银机械外壳、头部黄色翼片，同一张银色分片脸。", "Mature (suggested for spring, pending): cyan, lemon-yellow and silver armoured shell with yellow head fins, the same segmented silver face."),
+ "TRANS":  ("过渡：B1 本体＋黑色长羽绒服＋灰围巾，不戴假发（摘假发之后到天台）。", "Transitional: B1 body, long black puffer coat and grey scarf, no wig (after taking off the wig, through the rooftop)."),
+ "MATURE": ("成熟（已确认，用于现在时演播室和春天）：青黄银机械外壳、头部黄色翼片，同一张银色分片脸，不穿外套。", "Mature (confirmed for the present-day studio and spring): cyan, lemon-yellow and silver armoured shell with yellow head fins, the same segmented silver face, no coat."),
  "NONE":   ("画面里没有 ALPHA。", "ALPHA is not in this shot."),
 }
 GUIT = {
@@ -59,10 +59,10 @@ STU_LIGHT_CN = "黑色空棚，一盏暖色落地灯为主光，摄影机和工�
 STU_LIGHT_EN = "a dark empty studio, one warm floor lamp as key light, cameras and crew hidden in shadow, light haze"
 
 shot(id="O1", src="O1", asset="（新出图）", story="现在访谈", stage="TRANS", mv=op(4.0), lyrics="", guitar="-",
- camera="大特写，85mm，固定", action="音频师用白胶带把领夹麦贴在她胸前外壳上，胶带翘起，又按了一次", motion="胶带边缘翘起", light="侧面一盏工作灯，背景全黑", emotion="她一动不动，视线平视前方",
+ camera="大特写，85mm，固定", action="音频师用白胶带把领夹麦贴在她胸前的青黄外壳上，胶带翘起，又按了一次", motion="胶带边缘翘起", light="侧面一盏工作灯，背景全黑", emotion="她一动不动，视线平视前方",
  protect="音频师的手", mouth="否", lip="否", seg="", dlg="音频师（画外）：说两句，试一下音量。／ALPHA（画外）：一、二、三。", snd="胶带撕扯声、空调底噪",
- img_cn="新出图。大特写：音频师的手用白胶带把一枚黑色领夹麦贴在 ALPHA 胸前的银白色外壳上，羽绒服拉开，灰围巾。",
- img_en="extreme close-up, a sound engineer's hands using white gaffer tape to stick a tiny black lavalier microphone onto the chest plate of {A}, coat unzipped, the tape peeling off the smooth metal and being pressed down again, a single side work light, black background, 85mm, shallow depth of field",
+ img_cn="新出图。大特写：音频师的手用白胶带把一枚黑色领夹麦贴在 ALPHA 胸前的青黄色外壳上。",
+ img_en="extreme close-up, a sound engineer's hands using white gaffer tape to stick a tiny black lavalier microphone onto the glossy cyan and yellow chest plate of {A}, the tape peeling off the smooth metal and being pressed down again, a single side work light, black background, 85mm, shallow depth of field",
  an_cn="0–2 秒：胶带贴上去，边缘翘起；2–4 秒：手指把胶带重新按平，又多贴了一道。她的胸口没有呼吸起伏。", an_en="0–2s: the tape goes on and its edge lifts; 2–4s: the fingers press it flat and add a second strip. Her chest shows no breathing movement.")
 shot(id="O2", src="O2", asset="（新出图）", story="现在访谈", stage="NONE", mv=op(5.0), lyrics="", guitar="-",
  camera="中景，40mm，固定", action="音频师盯着电平表和频谱，她的声音电平平稳，没有呼吸和底噪的起伏；制片俯身指着屏幕说话", motion="屏幕上的电平条跳动", light="屏幕光照在两人脸上，四周暗", emotion="音频师困惑，制片不耐烦",
@@ -100,10 +100,10 @@ shot(id="P2", src="P2", asset="（新出图）", story="现在访谈", stage="NO
  img_en="high angle through a rain-streaked office window, a crowd of dozens of people with black umbrellas holding soaked handwritten protest signs on a street corner below, grey overcast daylight, wet glossy street, blurred window frame in the foreground, 85mm telephoto compression",
  an_cn="0–3 秒：雨水顺着玻璃往下流，楼下人群几乎不动，有人把牌子举高了一点。", an_en="0–3s: rain runs down the glass; the crowd below barely moves, one person lifts a sign a little higher.")
 shot(id="O6", src="O6", asset="（新出图）", story="现在访谈", stage="TRANS", mv=op(4.0), lyrics="", guitar="G-B",
- camera="全景，40mm 变形宽银幕，固定", action="场记在前景打板；林姐翻着手卡，ALPHA 坐在对面；她身后支架上立着木吉他，挂着小纸牌", motion="打板", light=STU_LIGHT_CN, emotion="安静、准备",
+ camera="全景，40mm 变形宽银幕，固定", action="场记在前景打板；林姐翻着手卡，ALPHA 坐在对面，椅背上叠着老周那条旧灰围巾；她身后支架上立着黄色电吉他，挂着小纸牌", motion="打板", light=STU_LIGHT_CN, emotion="安静、准备",
  protect="林姐（真人）", mouth="否（远）", lip="否", seg="", dlg="场记：《对面》第四十七期，第一条。", snd="打板声",
- img_cn="新出图。访谈布景全景：两把旧扶手椅面对面，一盏落地灯；林姐翻手卡，ALPHA 坐在对面，身后支架上是 G-B 木吉他。",
- img_en="wide shot of a dark minimalist interview set in a large black studio, two worn armchairs facing each other and a single floor lamp, a Chinese female interviewer in her early forties with short bob hair and a black suit flipping through cue cards, {A} sitting in the other armchair, behind the robot {G} on a stand with a small paper tag, a clapperboard snapping in the foreground, cinema cameras and crew half hidden in the shadows, 40mm anamorphic",
+ img_cn="新出图。访谈布景全景：两把旧扶手椅面对面，一盏落地灯；林姐翻手卡，成熟形象的 ALPHA 坐在对面，椅背上叠着一条旧灰围巾，身后支架上是黄色电吉他。",
+ img_en="wide shot of a dark minimalist interview set in a large black studio, two worn armchairs facing each other and a single floor lamp, a Chinese female interviewer in her early forties with short bob hair and a black suit flipping through cue cards, {A} sitting in the other armchair with an old grey knitted scarf folded over its back, behind the robot {G} on a stand with a small paper tag, a clapperboard snapping in the foreground, cinema cameras and crew half hidden in the shadows, 40mm anamorphic",
  an_cn="0–1 秒：场记在前景打板；1–4 秒：场记退出画面，林姐合上手卡抬起头。", an_en="0–1s: the clapperboard snaps in the foreground; 1–4s: it leaves the frame and the interviewer closes her cue cards and looks up.")
 shot(id="O7", src="O7", asset="（新出图）", story="现在访谈", stage="TRANS", mv=op(6.0), lyrics="", guitar="-",
  camera="过肩，50mm，固定", action="越过 ALPHA 的肩拍林姐提问，ALPHA 回答（只见后脑和耳侧涡轮）", motion="落地灯光", light=STU_LIGHT_CN, emotion="林姐平静、专业",
@@ -118,15 +118,15 @@ shot(id="O8", src="O8", asset="（新出图）", story="现在访谈", stage="TR
  img_en="close-up of {A} sitting in a worn armchair in a dark interview studio, silent, her eyes lowered, a lavalier mic taped to her chest, warm floor lamp light on half of her metal face, the other half in darkness, out-of-focus crew silhouettes in the background, 85mm, tension and silence",
  an_cn="0–2 秒：她听完问题，一动不动；2–5 秒：眼睛慢慢垂下，嘴保持闭合；5–6 秒：背景里两个工作人员互相看了一眼。", an_en="0–2s: she hears the question and stays still; 2–5s: her eyes slowly lower, mouth stays closed; 5–6s: two crew members in the background glance at each other.")
 shot(id="O9", src="O9", asset="（新出图）", story="现在访谈", stage="TRANS", mv=op(5.0), lyrics="", guitar="G-B",
- camera="中景，50mm，固定", action="她慢慢转头看向身后支架上的木吉他，说出一句话", motion="落地灯光在吉他上", light=STU_LIGHT_CN, emotion="犹豫，然后决定",
+ camera="中景，50mm，固定", action="她慢慢转头看向身后支架上的黄色电吉他，说出一句话", motion="落地灯光在吉他上", light=STU_LIGHT_CN, emotion="犹豫，然后决定",
  protect="吉他、纸牌", mouth="是", lip="对白（待录音）", seg="DLG_O9", dlg="ALPHA：我可以……唱出来吗？　（林姐看了她很久，点头）", snd="椅子轻响",
- img_cn="新出图。中景：ALPHA 坐在扶手椅里，慢慢转头看向身后支架上的 G-B 木吉他，前景是虚焦的林姐。",
+ img_cn="新出图。中景：ALPHA 坐在扶手椅里，慢慢转头看向身后支架上的黄色电吉他，前景是虚焦的林姐。",
  img_en="medium shot, {A} in an armchair slowly turning her head to look at {G} standing on a stand behind her with a small paper tag, the floor lamp light catching the guitar, the interviewer blurred in the foreground, dark studio, 50mm",
  an_cn="0–2 秒：她慢慢转头看向吉他；2–5 秒：她转回来，对着林姐说了一句短短的话。", an_en="0–2s: she slowly turns to look at the guitar; 2–5s: she turns back and says one short line to the interviewer.")
 shot(id="P4", src="P4", asset="（新出图）", story="现在访谈", stage="TRANS", mv=op(2.5), lyrics="", guitar="G-B",
- camera="中景，50mm", action="小鹿把木吉他递到她手里", motion="", light=STU_LIGHT_CN, emotion="小鹿平静，ALPHA 接住",
+ camera="中景，50mm", action="小鹿把黄色电吉他递到她手里", motion="", light=STU_LIGHT_CN, emotion="小鹿平静，ALPHA 接住",
  protect="小鹿（真人外观）", mouth="否", lip="否", seg="", dlg="", snd="吉他碰到椅子的轻响",
- img_cn="新出图。小鹿（实习场务，牛仔外套，工作牌）把 G-B 木吉他递给坐在扶手椅里的 ALPHA。",
+ img_cn="新出图。小鹿（实习场务，牛仔外套，工作牌）把黄色电吉他递给坐在扶手椅里的 ALPHA。",
  img_en="a 23-year-old Chinese girl with a round face, a low ponytail, a faded blue denim jacket and a crew badge handing {G} to {A} who sits in an armchair, the robot's metal hands reaching for it, warm floor lamp light, dark interview studio, 50mm",
  an_cn="0–2.5 秒：小鹿把吉他递过去，ALPHA 的金属手接住琴颈。", an_en="0–2.5s: Xiaolu hands over the guitar and ALPHA's metal hands take the neck.")
 shot(id="P5", src="P5", asset="K11（old）", frame="02_latest_frames/033_K11_PF2_手部与吉他特写_OLD_前期过渡候选.png", story="现在访谈", stage="TRANS", mv=op(1.5), lyrics="", guitar="G-B",
@@ -138,10 +138,10 @@ assert abs(t-OPEN) < 1e-6, t
 
 # ================================================================ SONG part 1
 def sg(i, o): return (i+B1_OFF, o+B1_OFF)
-shot(id="S01", src="S01", asset="（新出图；备用 K21 old）", story="现在访谈", stage="TRANS", song=(0.0,14.43), lyrics="（前奏）", guitar="G-B",
+shot(id="S01", src="S01", asset="（新出图；备用 K21 new）", story="现在访谈", stage="TRANS", song=(0.0,14.43), lyrics="（前奏）", guitar="G-B",
  camera="全景，40mm 变形宽银幕，极慢推近", action="她在落地灯下弹起前奏，暗处的工作人员一个个放慢、停下", motion="烟、光", light=STU_LIGHT_CN+"；另有一束顶光", emotion="专注",
  protect="工作人员真人", mouth="否（远）", lip="否", seg="", dlg="", snd="母带",
- img_cn="新出图。访谈布景全景：ALPHA 抱着木吉他坐在扶手椅里开始弹，周围暗处的工作人员停下动作。",
+ img_cn="新出图。访谈布景全景：成熟形象的 ALPHA 抱着黄色电吉他坐在扶手椅里开始弹，周围暗处的工作人员停下动作。",
  img_en="wide shot of a dark minimalist interview set, {A} sitting in a worn armchair with {G} across her lap starting to play, a single floor lamp and one overhead spotlight cutting through haze, crew members slowly stopping in the shadows around her, 40mm anamorphic",
  an_cn="0–14 秒：她低头弹前奏；暗处的人一个接一个放慢脚步、停下；镜头极慢地推近。", an_en="0–14s: she plays the intro with her head down; crew members in the dark slow down and stop one by one; the camera pushes in very slowly.")
 shot(id="S02", src="S02", asset="K20（old / new）", frame="02_latest_frames/007_K20_S02_面部与吉他极近景_OLD_前期过渡候选.png（推荐）", story="现在访谈", stage="TRANS", song=(14.43,21.03), lyrics="望着你坐上远去的列车", guitar="G-B",
@@ -386,9 +386,9 @@ shot(id="S26", src="S26", asset="K09", frame="02_latest_frames/026_K09_S26_走�
  img_cn="用现有候选。", img_en="",
  an_cn="0–3 秒：小鹿把细线接好，一下也没眨眼；3–6.6 秒：ALPHA 的眼睛一点点亮起来，光照在小鹿脸上，小鹿轻声说了一句话，淡淡地笑。", an_en="0–3s: Xiaolu connects the thin cable without blinking; 3–6.6s: ALPHA's eyes slowly light up, glowing on Xiaolu's face; she says something softly and smiles faintly.")
 shot(id="S27", src="S27", asset="K10（保留原图）", frame="02_latest_frames/027_K10_S27_三位伪装者_保留原图.png", story="回忆", stage="NONE", song=(171.00,177.63), lyrics="真心的人又能有几个", guitar="-",
- camera="低机位仰拍，原图，慢推", action="三人静静站着；镜头推近默默，他的眼镜没有镜片", motion="", light="原图", emotion="冷静",
+ camera="低机位仰拍，原图，慢推", action="三人静静站着，低机位仰视", motion="", light="原图", emotion="冷静",
  protect="三人保持原图", mouth="否", lip="否", seg="", dlg="", snd="母带",
- img_cn="原图保留。注意：原图里默默戴的是墨镜，“没有镜片的眼镜”破绽需要补一张特写，或改用 R04/K16 里的透明框眼镜（待确认）。", img_en="",
+ img_cn="原图保留。（“没有镜片的眼镜”这个破绽已取消，默默的破绽改由 L05 冷库里不呼白气承担。）", img_en="",
  an_cn="0–4 秒：三人静静站着，阿凯侧着脸不看镜头；4–6.6 秒：镜头慢慢推近。", an_en="0–4s: the three stand still, Akai looking away; 4–6.6s: slow push in.")
 shot(id="S28_01", src="S28", asset="R04（尾帧）＋新首帧（R04 加回假发）", frame="02_latest_frames/029_R04_S28_出租屋摘假发后正面近景_OLD_前期过渡候选.png", story="回忆", stage="LOW→TRANS", song=(177.63,181.00), lyrics="谁不是谁今生的过客（前半）", guitar="-",
  camera="近景，原图，固定", action="她摘下假发（首帧戴着，尾帧摘掉）", motion="", light="原图：暖小灯泡与窗外冷光", emotion="决定",
@@ -454,10 +454,10 @@ shot(id="S34", src="S34", asset="（新出图）", story="之后", stage="NONE",
  img_cn="新出图。特写：满是皱纹和老年斑的手搭在旧木扶手上，两根手指微微抬起，手机微光照在手背上。",
  img_en="close-up of an old wrinkled hand with age spots resting on a worn wooden armrest, two fingers lifted mid-tap, the faint glow of a phone screen on the skin, warm lamp light and cold blue snow light from a window mixing, 100mm",
  an_cn="0–6.5 秒：他的食指和中指在扶手上跟着歌的拍子轻轻敲（按母带实际节拍对齐），身体一动不动。", an_en="0–6.5s: his index and middle fingers tap the armrest gently in time with the song (align to the master's actual beat); the rest of him is still.")
-shot(id="S35", src="S35", asset="（新出图）", story="之后", stage="MATURE", song=(224.31,231.25), lyrics="在某个春暖花开的时刻", guitar="Y（琴盒）",
+shot(id="S35", src="S35", asset="（新出图）", story="之后", stage="MATURE", song=(224.31,231.25), lyrics="在某个春暖花开的时刻", guitar="G-B（琴盒）",
  camera="全景，40mm 变形宽银幕，手持", action="她背着琴盒走下绿皮车，抬头看站台，风吹落花瓣", motion="花瓣", light="雨后初晴，全片第一次暖色自然光", emotion="平静的到来",
  protect="小鹿、阿凯、默默（真人外观）", mouth="否", lip="否", seg="", dlg="", snd="母带",
- img_cn="新出图。春天东北县城小站，雨后初晴，站台边开满桃花；成熟形象的 ALPHA 背着琴盒走下绿皮车，身后跟着三位同伴。（成熟形象用于春天，待确认）",
+ img_cn="新出图。春天东北县城小站，雨后初晴，站台边开满桃花；成熟形象的 ALPHA 背着装着那把旧木吉他的琴盒走下绿皮车，身后跟着三位同伴。",
  img_en="spring after rain at a small northeast Chinese railway station, pink and white peach blossoms along the platform, an old green train stopped, {A_MATURE} stepping down from the train with a guitar case on her back, behind her a girl with a low ponytail and denim jacket, a young man with spiky black hair and a black leather jacket, and a thin man with black-framed glasses pushing a power case, soft diffused sunlight, the first warm saturated colors of the film, petals on the wet platform, 40mm anamorphic",
  an_cn="0–7 秒：她走下车，站定，抬头看着站台，风吹落花瓣；身后的女孩轻轻碰了碰她的胳膊。", an_en="0–7s: she steps down, stops and looks up at the platform as petals fall; the girl behind her touches her arm.")
 shot(id="S36_01", src="S36", asset="K17（old / new）", frame="02_latest_frames/041_K17_S36_演播室座椅背侧面_OLD_前期过渡候选.png（推荐）", story="现在访谈", stage="TRANS", song=(231.25,236.00), lyrics="（尾奏）", guitar="G-B",
@@ -478,7 +478,7 @@ def ep(d):
 shot(id="S37", src="S37", asset="（新出图）", story="现在访谈", stage="TRANS", ep=ep(14.0), lyrics="", guitar="G-B",
  camera="双人中景，侧面，40mm 变形宽银幕，固定", action="林姐问出第一题；她回答；林姐把手卡扣下，划掉嘉宾牌上的“（设备）”", motion="", light="两人各在一束光下，中间暗", emotion="安静的转变",
  protect="林姐（真人）、嘉宾牌", mouth="是", lip="对白（待录音）", seg="DLG_S37", dlg="林姐：你的悲伤……是真的吗？／ALPHA：我不知道它算不算真的。他走的那天，我在站台站了七个小时。", snd="空棚底噪",
- img_cn="新出图。纪录片访谈双人中景：左边抱木吉他的 ALPHA，右边林姐拿笔对着两人中间小桌上的白色嘉宾牌（字后期合成）。",
+ img_cn="新出图。纪录片访谈双人中景：左边抱黄色电吉他的成熟形象 ALPHA，右边林姐拿笔对着两人中间小桌上的白色嘉宾牌（字后期合成）。",
  img_en="documentary interview two-shot in a pitch black studio, {A} with {G} on the left, a Chinese female interviewer in her early forties with short bob hair and a black suit on the right holding a pen over a white name card on the small table between them, a single floor lamp between them, quiet resolution, 40mm anamorphic",
  an_cn="0–3 秒：林姐抬头提问；3–9 秒：ALPHA 停了很久，慢慢回答；9–11 秒：林姐把手卡扣在桌上；11–14 秒：她拿起笔，划掉嘉宾牌上的一个词。（超出模型时长可在 9 秒处拆成两段）", an_en="0–3s: the interviewer asks; 3–9s: ALPHA pauses a long time and answers slowly; 9–11s: the cue card is laid face down; 11–14s: she picks up the pen and crosses out a word on the name card. (Split at 9s if over the model limit.)")
 shot(id="S38", src="S38", asset="K28", frame="02_latest_frames/045_K28_S38_春天与老周并坐长椅_最新候选.png", story="之后", stage="MATURE", ep=ep(12.0), lyrics="", guitar="-",
@@ -492,6 +492,34 @@ shot(id="END", src="—", asset="—", story="—", stage="NONE", ep=ep(2.0), ly
  img_cn="后期制作。", img_en="", an_cn="", an_en="")
 assert abs(e-EPI) < 1e-6, e
 
+
+STUDIO = {"O1","O3","O4","P1c","O6","O7","O8","O9","P4","P5","S01","S02","PF1","S04","S06","IV2","IV5","PF2","PF4","S30","S36_01","S36_02","S37"}
+NEWFRAME = {
+ "P1c":"02_latest_frames/006_K22_P1c_演播室贴设备标签_NEW_成熟造型候选.png",
+ "S02":"02_latest_frames/008_K20_S02_面部与吉他极近景_NEW_成熟造型候选.png",
+ "PF1":"02_latest_frames/038_K21_PF4_低角度弹唱中景_NEW_成熟造型候选.png",
+ "P5":"02_latest_frames/034_K11_PF2_手部与吉他特写_NEW_成熟造型候选.png",
+ "PF2":"02_latest_frames/034_K11_PF2_手部与吉他特写_NEW_成熟造型候选.png",
+ "PF4":"02_latest_frames/036_K13_PF4_低角度仰拍弹唱_NEW_成熟造型候选.png",
+ "S30":"02_latest_frames/040_K18_S30_演播室弹唱近景_NEW_成熟造型候选.png",
+ "S36_01":"02_latest_frames/042_K17_S36_演播室座椅背侧面_NEW_成熟造型候选.png",
+ "S36_02":"02_latest_frames/044_R05_S36_演播室背侧近景_NEW_成熟造型候选.png",
+}
+for k in S:
+    if k["id"] in STUDIO:
+        if k["stage"] == "TRANS": k["stage"] = "MATURE"
+        if k["guitar"].startswith("G-B"): k["guitar"] = "Y"
+        if k["id"] in NEWFRAME:
+            k["frame"] = NEWFRAME[k["id"]]
+            k["asset"] = k["asset"].replace("（old / new 二选一）","（NEW）").replace("（old / new）","（NEW）").replace("（old）","（NEW）")
+        for a,b in (("木吉他","黄色电吉他"),("木琴","电吉他")):
+            for f in ("action","img_cn","an_cn","protect"): k[f] = k[f].replace(a,b)
+        k["an_en"] = k["an_en"].replace("acoustic guitar","electric guitar")
+    if k["lip"].startswith("对白"):
+        k["lip"] = "否（对白只出字幕）"
+    if k["seg"].startswith("DLG"): k["seg"] = ""
+    k["dlg"] = k["dlg"].replace("对白（画外）","字幕（画外）")
+
 # ================================================================ derive times + write
 for k in S:
     if "mv" in k: k["mv_in"], k["mv_out"] = k["mv"]; k["song_in"]=k["song_out"]=None; k["block"]="B0 开场"
@@ -503,7 +531,8 @@ for k in S:
     elif "ep" in k: a,b = k["ep"]; k["mv_in"],k["mv_out"] = EPI_START+a, EPI_START+b; k["song_in"]=k["song_out"]=None; k["block"]="B4 结尾"
 def fmt(x): return "" if x is None else f"{x:.2f}"
 def fill(s, k):
-    return s.replace("{A}", ALPHA_EN.get(k["stage"].split("→")[0], ALPHA_EN["B1"])).replace("{A_MATURE}", ALPHA_EN["MATURE"]).replace("{G}", GUIT["G-B"][1])
+    g = GUIT["Y"][1] if k["guitar"].startswith("Y") else GUIT["G-B"][1]
+    return s.replace("{A}", ALPHA_EN.get(k["stage"].split("→")[0], ALPHA_EN["B1"])).replace("{A_MATURE}", ALPHA_EN["MATURE"]).replace("{G}", g)
 def a_cons(k):
     st = k["stage"].split("→")[-1]
     parts_cn, parts_en = [], []
@@ -568,7 +597,7 @@ with open(os.path.join(HERE,"04_双时间轴段落.csv"),"w",newline="",encoding
 # readable prompt book
 L = []; w = L.append
 w("# 《远去的列车》第七版：逐镜图片与 sd2.5 动画提示词\n")
-w("> 由 `build_shotlist.py` 生成，与 `03_分镜清单.csv` 同源。时间均为暂定：歌曲时间取自母带内嵌歌词（未逐句听辨），成片时间按推荐结构推算。")
+w("> 由 `build_shotlist.py` 生成，与 `03_分镜清单.csv` 同源。**已按 2026-10-06 的决定更新：演播室用 NEW 成熟形象＋黄色电吉他；春天用成熟形象；v2 全部采用；对白只出字幕。**时间均为暂定：歌曲时间取自母带内嵌歌词（未逐句听辨），成片时间按推荐结构推算。")
 w("> **用现有候选的镜头**直接拿候选图做首帧；**新出图的镜头**先用英文图片提示词在 MJ 出图，再做动画。所有候选和新图都待逐帧确认。\n")
 w(f"成片总长（暂定）：{EPI_START+EPI:.1f} 秒 ≈ {int((EPI_START+EPI)//60)} 分 {int((EPI_START+EPI)%60)} 秒\n")
 w("**sd2.5 使用说明**")
