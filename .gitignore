@@ -14,3 +14,8 @@ v8/*.zip
 v8/out/
 v8/clips/
 v8/frames/
+v9/audio/*.wav
+v9/audio/*.mp3
+v9/*.zip
+v9/out/
+v9/clips/
