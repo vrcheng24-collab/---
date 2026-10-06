@@ -5,3 +5,4 @@ mv/node_modules/
 mv/song.mp3
 mv/pluck.wav
 v7/audio/*.wav
+v7/*.zip
