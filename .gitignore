@@ -34,3 +34,8 @@ test03/*.mp3
 test03/*.zip
 test04/*.mp3
 test05/*.zip
+rig/node_modules/
+rig/out/
+rig/frames/
+test06/*.mp4
+test06/*.zip

@@ -1,0 +1,1 @@
+{ "name": "alpha-rig", "private": true, "description": "ALPHA head rig: audio-driven servo jaw, rendered as a motion reference", "dependencies": { "three": "0.186.1" } }
