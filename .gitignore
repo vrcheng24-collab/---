@@ -47,3 +47,6 @@ test10/*.mp3
 mvtest/*.zip
 test11/*.zip
 test12/*.zip
+final/audio/*.wav
+final/audio/*.mp3
+final/*.zip
