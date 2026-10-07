@@ -52,3 +52,7 @@ final/audio/*.mp3
 final/*.zip
 v11/*.zip
 v12/*.zip
+mvcut/ALPHA_导演素材/
+mvcut/work/
+mvcut/out/*.mp4
+mvcut/out/send/
