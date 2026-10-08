@@ -56,3 +56,8 @@ mvcut/ALPHA_导演素材/
 mvcut/work/
 mvcut/out/*.mp4
 mvcut/out/send/
+mv3d/out/
+mv3d/look/*.png
+mv3d/memory_*.png
+mv3d/__pycache__/
+mv3d/look/__pycache__/
