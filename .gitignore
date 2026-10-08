@@ -61,3 +61,4 @@ mv3d/look/*.png
 mv3d/memory_*.png
 mv3d/__pycache__/
 mv3d/look/__pycache__/
+mv3d/fonts/
