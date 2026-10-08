@@ -95,7 +95,7 @@ def finish(img, t, warmth=0.0, lift=0.03, grain=0.03, halation=1.0, vignette=0.3
     x = x + (np.array([-0.02, 0.005, 0.03]) * (1 - lum) + np.array([0.035 + warmth, 0.0, -0.035 - warmth]) * lum)
     if halation:
         hi = np.clip(x - 0.70, 0, 1)
-        x = x + cv2.GaussianBlur(hi, (0, 0), 12) * np.array([1.1, 0.45, 0.22]) * halation + cv2.GaussianBlur(hi, (0, 0), 40) * np.array([0.35, 0.22, 0.15]) * halation
+        x = x + bblur(hi, 12) * np.array([1.1, 0.45, 0.22]) * halation + bblur(hi, 40) * np.array([0.35, 0.22, 0.15]) * halation
     hh, ww = x.shape[:2]
     if (hh, ww) not in _GR:
         yy, xx = np.mgrid[0:hh, 0:ww].astype(np.float32)
@@ -125,5 +125,11 @@ def splat(img, x, y, col, b):
     xi, yi = x.astype(np.int32), y.astype(np.int32); fx, fy = (x - xi).astype(np.float32), (y - yi).astype(np.float32)
     for ox, oy, w in ((0, 0, (1 - fx) * (1 - fy)), (1, 0, fx * (1 - fy)), (0, 1, (1 - fx) * fy), (1, 1, fx * fy)):
         np.add.at(img, (yi + oy, xi + ox), col * (b * w)[:, None])
+def bblur(x, s):
+    """Gaussian blur; large sigmas are done at reduced resolution (same look, a fraction of the cost)."""
+    if s < 6: return cv2.GaussianBlur(x, (0, 0), s)
+    f = int(min(8, max(2, s // 3))); h, w = x.shape[:2]
+    small = cv2.resize(x, (max(1, w // f), max(1, h // f)), interpolation=cv2.INTER_AREA)
+    return cv2.resize(cv2.GaussianBlur(small, (0, 0), s / f), (w, h), interpolation=cv2.INTER_LINEAR)
 def glow(img, k=1.0):
-    return img + (cv2.GaussianBlur(img, (0, 0), 3) * 0.6 + cv2.GaussianBlur(img, (0, 0), 18) * 0.35 + cv2.GaussianBlur(img, (0, 0), 60) * 0.18) * k
+    return img + (cv2.GaussianBlur(img, (0, 0), 3) * 0.6 + bblur(img, 18) * 0.35 + bblur(img, 60) * 0.18) * k

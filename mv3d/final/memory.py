@@ -59,7 +59,7 @@ def memory(t, clip, src0, t0, t1, speed=1.0, zoom=(1.0, 1.05), pan=(0.0, 0.0), b
     img = cv2.GaussianBlur(img, (0, 0), 0.7)
     lum = img.mean(-1, keepdims=True); img = lum + (img - lum) * 0.78
     img = img * np.array([1.0, 0.94, 0.82]) ** warm * 0.92 + np.array([0.055, 0.040, 0.030])
-    img = img + cv2.GaussianBlur(np.clip(img - 0.7, 0, 1), (0, 0), 10) * np.array([0.9, 0.45, 0.2])
+    img = img + bblur(np.clip(img - 0.7, 0, 1), 10) * np.array([0.9, 0.45, 0.2])
     img *= 0.94 + 0.06 * rng.random()                                                    # flicker
     for _ in range(rng.integers(0, 4)):                                                  # dust and hair
         x, y = int(rng.uniform(0, gw)), int(rng.uniform(0, GH))
@@ -77,7 +77,7 @@ def memory(t, clip, src0, t0, t1, speed=1.0, zoom=(1.0, 1.05), pan=(0.0, 0.0), b
     spill = cv2.GaussianBlur(cv2.resize(img, (gw // 8, GH // 8)), (0, 0), 6)
     spill = cv2.resize(spill, (gw, GH)).mean((0, 1)) * 0.20
     big = np.zeros((PH, W), np.float32); cv2.rectangle(big, (X0 + 40, Y0 + 40), (X0 + 40 + gw, Y0 + 40 + GH), 1.0, -1)
-    out += cv2.GaussianBlur(big, (0, 0), 70)[..., None] * spill
+    out += bblur(big, 70)[..., None] * spill
     reg = out[Y0:Y0 + GH + 80, X0:X0 + gw + 80]
     out[Y0:Y0 + GH + 80, X0:X0 + gw + 80] = reg * (1 - m[..., None]) + canvas * m[..., None]
     # the gate opens and closes with a quick flicker

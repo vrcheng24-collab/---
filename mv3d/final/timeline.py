@@ -153,7 +153,7 @@ def render_chunk(c):
     if os.path.exists(path): return idx, 0.0
     t0 = time.time(); tmp = path + ".part.mp4"
     p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-                          "-c:v", "libx264", "-preset", "medium", "-crf", "15", "-pix_fmt", "yuv420p", "-g", "48", tmp], stdin=subprocess.PIPE)
+                          "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-g", "48", tmp], stdin=subprocess.PIPE)
     for n in range(f0, f1): p.stdin.write(frame(n / FPS).tobytes())
     p.stdin.close(); p.wait(); os.replace(tmp, path)
     return idx, (time.time() - t0) / (f1 - f0)

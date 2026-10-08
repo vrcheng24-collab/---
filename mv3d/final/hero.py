@@ -237,7 +237,7 @@ def audience(t, cam_x, px_m, floor_y, robot_cx, seed=5, n=9, phones=True):
     rim = np.clip(A - np.vstack([np.zeros((4, W), np.float32), A[:-4]]), 0, 1)          # top edges catch the spot
     rim *= np.clip(1 - np.abs(np.arange(W)[None, :] - robot_cx) / (W * 0.7), 0.3, 1)    # stronger near the light
     col = np.zeros((PH, W, 3), np.float32) + np.array([0.014, 0.012, 0.013]) + rim[..., None] * np.array([0.80, 0.55, 0.34]) * 0.8
-    G = cv2.GaussianBlur(G, (0, 0), 1.2); G = G + cv2.GaussianBlur(G, (0, 0), 10) * 0.8
+    G = cv2.GaussianBlur(G, (0, 0), 1.2); G = G + bblur(G, 10) * 0.8
     return col, A, G
 
 def patrons(t, cam_x, n=3, seed=5, size=1.0):
@@ -251,7 +251,7 @@ def patrons(t, cam_x, n=3, seed=5, size=1.0):
         sway = 6 * math.sin(t * 0.5 + i * 2)
         cv2.ellipse(a, (int(x + sway), int(cy)), (int(hr * 0.78), int(hr)), 0, 0, 360, 1.0, -1, cv2.LINE_AA)
         cv2.ellipse(a, (int(x + sway * 0.5), int(cy + hr * 1.9)), (int(hr * 2.4), int(hr * 1.3)), 0, 0, 360, 1.0, -1, cv2.LINE_AA)
-    a = cv2.GaussianBlur(a, (0, 0), 22 * size)
+    a = bblur(a, 22 * size)
     rim = np.clip(a - np.vstack([np.zeros((14, W), np.float32), a[:-14]]), 0, 1)
     col = np.zeros((PH, W, 3), np.float32) + np.array([0.006, 0.005, 0.006]) + rim[..., None] * np.array([0.60, 0.40, 0.25]) * 0.8
     return col, np.clip(a * 1.1, 0, 1)
@@ -324,4 +324,4 @@ def shot(t, name, t0, t1, fr, spot=1.0, nod_phase=0.0, crowd=12, fg=0, fg_size=1
     if fg:
         col, pa = patrons(t, F["camx"], n=fg, seed=seed + 2, size=fg_size)
         img = img * (1 - pa[..., None]) + col * pa[..., None]
-    return img + cv2.GaussianBlur(img, (0, 0), 16) * 0.10
+    return img + bblur(img, 16) * 0.10
