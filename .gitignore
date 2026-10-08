@@ -63,3 +63,5 @@ mv3d/__pycache__/
 mv3d/look/__pycache__/
 mv3d/fonts/
 mv3d/models/
+mv3d/hero/
+mv3d/final/__pycache__/
